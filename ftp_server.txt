@@ -1,0 +1,85 @@
+FTP Server
+
+
+1. Assign static IP Address 
+ go to view conncted devices
+right click on network which you want to give static IP addess
+
+2.Turn on ftp services on windows
+go to Turn windows on off features
+click Internet Information services
+check FTP Server
+	check Ftp Extensibilty
+	check Ftp Service
+Check Web Management Tools
+
+3. Configure FTP Server
+make folder which you want to share
+
+go to Internet Information Services(IIS)
+click on your PC name
+then sites and right click on sites and choose add ftp site
+	give ftp site name
+	choose physical path of folder which you want to share
+	click next
+
+	give static IP address which one you assigned 
+	Check no SSL in SSL options
+	
+	click next
+
+	in authentication check basic
+	in authorization 
+	give allow access to 
+	anonymous user
+	specified user
+	give name of user in below like ftp-user
+
+	give read and write permissions
+
+click finish
+
+4.create ftp user
+go to settings select Accounts
+go to Family & other users
+choose i dont have this person sign-in information
+choose add a new user without Microsoft account
+enter username password and re enter password and other details
+
+go to folder which one you set as ftp folder
+right click on it choose properties 
+than security than edit
+enter username of user which one you created recently
+click on check names than Ok
+now click on username which one you added recently
+give full control permission.
+than apply
+
+5.configure windows firewall
+go to start menu search windows defrnder firewall 
+click allow an app
+click change setting option
+find FTP Server and check it and also check public network
+
+now click Turn windows defender firewall on or off
+check turn off windows defender firewall in both 
+click ok
+
+now try to access FTP Server from other devices on local network
+
+start your phone
+go to google play store
+search ftp cafe
+download it
+open it
+
+give ftp site name
+ip address
+username and password
+
+click ok
+
+now click on connect
+
+now you can access file of FTP server
+also you can upload file from your phone  to FTP Server
